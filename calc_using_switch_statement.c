@@ -21,7 +21,7 @@ int main() {
         case'%':
         result = a%b;
         break;
-          case('/'):
+        case('/'):
         if (b!=0){
         result = a/b;
         }else {
