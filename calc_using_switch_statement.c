@@ -33,6 +33,6 @@ int main() {
         printf("invalid operator selected");
         return 1;
     }
-printf("The result is %i\n=",result);
+printf("The result is %i\n",result);
 return 0;
 }
