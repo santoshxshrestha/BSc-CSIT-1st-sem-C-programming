@@ -1,20 +1,25 @@
 #include <stdio.h>
+
 int main() {
-    float units,charge;
-    printf("Enter the units consumed by the customer-\n");
-    scanf("%f",&units);
-    if (units<=100) {
-        charge =1.50*units;
+    float units, charge = 0.0;
+
+    printf("Enter the units consumed by the customer: ");
+    scanf("%f", &units);
+
+    if (units <= 100) {
+        charge = 1.50 * units;
+    } 
+    else if (units <= 200) {
+        charge = (1.50 * 100) + (2.50 * (units - 100));
+    } 
+    else if (units <= 500) {
+        charge = (1.50 * 100) + (2.50 * 100) + (3.50 * (units - 200));
+    } 
+    else {
+        charge = (1.50 * 100) + (2.50 * 100) + (3.50 * 300) + (5.50 * (units - 500));
     }
-    else if (units<=200) {
-        charge =2.50*(units-100);
-    }
-    else if (units<500){
-        charge =3.50*(units-300);
-    }
-    else if (units>500) {
-        charge =5.50*(units-500);
-    }
-    printf("The charge is $%.2f\n",charge);
+
+    printf("The total charge is $%.2f\n", charge);
+
     return 0;
 }
