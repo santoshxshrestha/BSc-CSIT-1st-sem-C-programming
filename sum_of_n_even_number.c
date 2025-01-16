@@ -14,6 +14,6 @@ int calc(int a) {
     for(int i = 0; i<=a ; i++){
         sum+=2*i;
     }
-    printf("The sum of first %d even numbers is %d \n ",a,sum);
+    printf("The sum of first %d even numbers is %d \n",a,sum);
     return 0;
 }
