@@ -20,9 +20,10 @@
 // //     }
 // //     return 0;
 // // }
-#include<stdio.h>
+#include <stdio.h>
 int main() {
-    santosh();
-    printf("my name is santosh");
+    int a, b ;
+    printf("enter the two numbers ");
+    scanf("%d %d", &a, &b);
+    printf("the value stored are %d , %d",a,b);
 }
-santosh()
