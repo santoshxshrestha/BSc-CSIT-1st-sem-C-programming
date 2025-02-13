@@ -16,8 +16,8 @@ int main() {
         printf(
             "Ener the numbers that you want to enter : "
         );
-        scanf("%d",&ptr[i]);
-       sum+=ptr[i]; 
+        scanf("%d",ptr +i);
+       (sum+=ptr[i]); 
     }
     printf("The sum of %d numbers is %d. \n",n,sum);
     free(ptr);
