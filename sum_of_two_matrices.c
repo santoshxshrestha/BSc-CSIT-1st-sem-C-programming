@@ -18,7 +18,7 @@ int main(){
 // using the loops for adding matrix1 and then matrix2 and putting the value in the third matrix matrix3
     for(int i=0; i<2;i++) {
         for(int j=0; j<2;j++) {
-            matrix3[i][j] = matrix1[i][j]=matrix2[i][j];
+            matrix3[i][j] = matrix1[i][j] + matrix2[i][j];
         }
     }
 
