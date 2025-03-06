@@ -11,7 +11,6 @@ again:
     }else {
     printf("you have entered the positive number and the number is: %d\n",a);
     }
-
-
     
+    return 0;
 }
