@@ -9,6 +9,13 @@ int main () {
     int sum = a+b;
     printf("The sum of the number: %d with another number: %d is: %d.\n",a, b, sum);
     printf("The number that is declared globally is :%d.\n",c);
+
+    float x=12.2, y= 12.4;
+    printf("The data for float test are x: %.2f ,and y: %.2f\n", x,y);
+    // float mudulo = x%y;
+    // here this won't work because of the behaviour of the modulo because it can't be performed with the float vals
+    // printf("%f\n",mudulo);
+
 }
 
 int b = 20;
