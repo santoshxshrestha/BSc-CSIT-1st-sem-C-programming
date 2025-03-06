@@ -13,3 +13,7 @@ int main () {
 
 int b = 20;
 int c = 32;
+
+//here it wont give us any error but if we call it on the main function when we have to declare the 
+//variable above the main function 
+int d = 23;
