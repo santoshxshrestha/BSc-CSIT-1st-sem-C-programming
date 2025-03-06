@@ -16,3 +16,4 @@
 *.exe
 *.dll
 *.pdb
+*a.out
