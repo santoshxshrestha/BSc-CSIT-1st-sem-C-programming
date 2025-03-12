@@ -1,7 +1,4 @@
 #include <stdio.h>
-
-
-
 int add(int, int);
 int print_string(char string[]);
 
