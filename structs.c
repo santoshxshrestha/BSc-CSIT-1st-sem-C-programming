@@ -6,6 +6,8 @@ struct Student {
     unsigned Age;
 };
 
+int print_name(struct Student [], int);
+
 int main(){
     int n;
     printf("Enter the number of students: ");
@@ -39,12 +41,16 @@ int main(){
 }
 
 int print_name(struct Student students[], int n){
-    printf("The name of the students who got percentage greater then 70 are: \n");
+    int found = 1;
     for(int i = 0; i<n; i++){
         if(students[i].Percentage > 70){
-            printf("%s got %.2f\n",students[i].Name, students[i].Percentage);
-        }
+            found = 0;
+            printf("%s who got %.2f\n",students[i].Name, students[i].Percentage);
+        }   
     }
 
+    if (found == 1) {
+        printf("No one got the percentage greater than 70\n");
+    }
     return 0;
 }
