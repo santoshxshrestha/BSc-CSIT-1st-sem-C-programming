@@ -51,6 +51,8 @@ int print_name(struct Student students[], int n){
 
     if (found == 1) {
         printf("No one got the percentage greater than 70\n");
+    }else {
+        printf("There are the name of the student who got percentage above 70");
     }
     return 0;
 }
