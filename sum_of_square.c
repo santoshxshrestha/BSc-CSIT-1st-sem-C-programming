@@ -23,7 +23,7 @@ int main() {
                 sum += matrix[i][j] * matrix[i][j];
             }
         }
-    };
+    }
     printf("Sum of square of all the elements in the principle diagonal of the matrix is: %d\n", sum);
 
 }
