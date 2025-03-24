@@ -1,5 +1,5 @@
 //the following program will take input from the user and store it in a file and then read the file and display the content of the file.
-# include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 
 void clear() {
@@ -34,18 +34,18 @@ int main(){
         scanf("%s", st[i].address);
 
         printf("\n");
-        fwrite(&st[i],sizeof(st[i]),1,fp);
-
+        fprintf(fp, "%s\n",st[i].name);
+        fprintf(fp, "%d\n",st[i].symbol);
+        fprintf(fp, "%s\n",st[i].address);
         clear();
     }
 
     rewind(fp);
-    for(int i = 0; fread(&st[i], sizeof(st[i]),1,fp)==1; i++){
-        printf("name: %s\n", st[i].name);
-        printf("symbol: %d\n", st[i].symbol);
-        printf("address: %s\n", st[i].name);
-        printf("\n");
+    int ch;
+    while((ch = fgetc(fp))!=EOF){
+        putchar(ch);
     }
     fclose(fp);
+    return 0;
 }
 
