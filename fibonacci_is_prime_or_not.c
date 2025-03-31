@@ -1,3 +1,5 @@
+//this program will take the input form the user as a number then find out the 
+//fibonacci number of that term and tell that if it is prime number or not
 #include <stdio.h>
 #include <math.h>
 int term(int n){
