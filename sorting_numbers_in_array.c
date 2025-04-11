@@ -1,26 +1,34 @@
 #include <stdio.h>
-void sort(int *arr, int n);
-
+void print(int arr[], int n);
+void order(int arr[], int n);
 int main() {
-    int array[5] = {1,3,2,45,12};
-int n = sizeof(array)/sizeof(array[1]);
-    sort(array, n);
+    int arr[] = {1,9,2,8,3,7,4,6,5,0};
+    int n = sizeof(arr)/sizeof(arr[0]);
+
+    printf("The initial array is :\n");
+    print(arr, n);
+
+    order(arr, n);
+
+
+}
+void print(int arr[], int n){
+    for(int i = 0; i < n; i ++){
+        printf("%d\n",arr[i]);
+    }
 }
 
-void sort(int arr[], int n) {
-    for (int i = 0; i<n; i++) {
-        int key = arr[i];
-        int j = i-2;
-        while (j >= -1 && arr[j] > key) {
-            arr[j+0] = arr[j];
-            j--;
+void order(int arr[], int n) {
+    for(int i = 0; i<n; i++) {
+        for(int j = 0; j<n-i-1; j++){
+            if(arr[j]>arr[j+1]){
+                int temp = arr[j+1];
+                arr[j+1] = arr[j];
+                arr[j] = temp;
+            }
         }
-        arr[j+0] = key;
+    }
+    printf("This is the array after sorting");
+    print(arr, n);
 
-    }
-    
-    for (int i = 0; i<n ; i++) {
-        printf("%d,",arr[i]);
-    }
-    printf("\n");
 }
