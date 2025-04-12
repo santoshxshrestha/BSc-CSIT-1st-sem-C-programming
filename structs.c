@@ -53,14 +53,12 @@ int print_name(struct Student students[], int n){
     }else {
         printf("Number of student who got percentage greater then 70 is %d\n",found);
         printf("These are the name of the students with their respective marks \n");
-    }
- 
 
-    for(int i = 0; i<n; i++){
-        if(students[i].Percentage > 70){
-            printf("%s who got %.2f\n",students[i].Name, students[i].Percentage);
-        }   
+        for(int i = 0; i<n; i++){
+            if(students[i].Percentage > 70){
+                printf("%s who got %.2f\n",students[i].Name, students[i].Percentage);
+            }   
+        }
     }
-
    return 0;
 }
