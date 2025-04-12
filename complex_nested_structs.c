@@ -59,7 +59,7 @@ int main() {
     printf("\n");
     printf("Details of %s of age %d who lives in %s, His roll number is %d\n",s[i].name, s[i].age, s[i].address, s[i].rollno);
     printf("The total marks got by the %s is: %d\n",s[i].name, total);
-    printf("The total percentage got by the student is: %.2f%%\n",percentage);
+    printf("The total percentage got by %s is: %.2f%%\n",s[i].name, percentage);
     printf("\n");
     };
 
