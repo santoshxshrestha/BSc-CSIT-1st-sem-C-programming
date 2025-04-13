@@ -19,6 +19,4 @@ int fibonacci_recursive(int n) {
         return 1;
     }
     return fibonacci_recursive(n - 1) + fibonacci_recursive(n - 2);
-
-return 0;    
 }
