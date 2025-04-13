@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include<stdio.h>
 int main() {
-    int *ptr ,n,sum=0;
+    int *ptr n,sum=0;
     printf("How many number you want to enter : ");
     scanf("%d",&n);
     ptr = (int *)malloc(sizeof(int) * n);
